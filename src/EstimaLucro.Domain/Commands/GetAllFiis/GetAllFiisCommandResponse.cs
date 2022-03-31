@@ -1,7 +1,7 @@
-﻿using EstimaLucroAPI.Application.Models;
+﻿using EstimaLucro.Domain.Models;
 using System.Collections.Generic;
 
-namespace EstimaLucroAPI.Application.Commands.GetAllFiis
+namespace EstimaLucro.Domain.Commands.GetAllFiis
 {
     public class GetAllFiisCommandResponse
     {

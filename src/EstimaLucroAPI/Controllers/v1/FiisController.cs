@@ -1,5 +1,5 @@
-﻿using EstimaLucroAPI.Application.Commands.GetAllFiis;
-using EstimaLucroAPI.Application.Models;
+﻿using EstimaLucro.Domain.Commands.GetAllFiis;
+using EstimaLucro.Domain.Models;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;

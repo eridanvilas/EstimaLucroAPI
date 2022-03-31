@@ -6,9 +6,9 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using AutoMapper;
 using MediatR;
-using EstimaLucroAPI.Application.Mapper;
-using EstimaLucroAPI.Application.Commands.GetAllFiis;
 using System.Reflection;
+using EstimaLucro.Domain.Mapper;
+using EstimaLucro.Domain.Commands.GetAllFiis;
 
 namespace EstimaLucroAPI
 {

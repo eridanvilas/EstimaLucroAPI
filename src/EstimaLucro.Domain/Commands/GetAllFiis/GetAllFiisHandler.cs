@@ -1,15 +1,15 @@
-﻿using EstimaLucroAPI.Application.Models;
+﻿using EstimaLucro.Domain.Models;
 using MediatR;
-using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace EstimaLucroAPI.Application.Commands.GetAllFiis
+namespace EstimaLucro.Domain.Commands.GetAllFiis
 {
     public class GetAllFiisHandler : IRequestHandler<GetAllFiisCommand, GetAllFiisCommandResponse>
     {
         private readonly IMediator _mediator;
+ 
 
         //TODO REPOSITORY FII
         public GetAllFiisHandler(IMediator mediator)
@@ -19,8 +19,7 @@ namespace EstimaLucroAPI.Application.Commands.GetAllFiis
 
         public async Task<GetAllFiisCommandResponse> Handle(GetAllFiisCommand request, CancellationToken cancellationToken)
         {
-            IList<Fii> fiisList = new List<Fii>();
-            fiisList.Add(new Fii(1, "Fundo Teste", 10, 9, DateTime.Now));
+            IList<Fii> fiisList = _mediator.Send(GetAllQueryHandler)
 
             var response = new GetAllFiisCommandResponse(fiisList);
             return response;

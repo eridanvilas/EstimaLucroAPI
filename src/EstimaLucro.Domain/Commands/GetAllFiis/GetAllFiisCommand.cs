@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace EstimaLucroAPI.Application.Commands.GetAllFiis
+namespace EstimaLucro.Domain.Commands.GetAllFiis
 {
     public class GetAllFiisCommand : IRequest<GetAllFiisCommandResponse>
     {
