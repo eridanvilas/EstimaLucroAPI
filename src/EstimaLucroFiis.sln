@@ -5,6 +5,24 @@ VisualStudioVersion = 17.1.32228.430
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EstimaLucroAPI", "EstimaLucroAPI\EstimaLucroAPI.csproj", "{524D3CA1-B09E-412E-887B-FAA65C438755}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Application", "1 - Application", "{CE6E9382-2779-492B-B232-255C53B2972F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Presentation", "2 - Presentation", "{4C44D603-182D-4AEF-8E10-14AC7F4879BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - WinService", "3 - WinService", "{C8A280DD-2190-40D0-8F18-04786C58655B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Domain", "4 - Domain", "{577321C1-D66A-4F5C-848F-A3BB7A908B2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5 - Infrastructure", "5 - Infrastructure", "{0BEDA0F0-5AE4-4375-B600-445F41C7E312}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstimaLucro.Domain", "EstimaLucro.Domain\EstimaLucro.Domain.csproj", "{1C0CED14-7D95-4482-A60E-B26E772FE2E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{20BBB795-33F4-42A0-93B0-0AFBA05B589C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstimaLucro.Infra.Data", "EstimaLucro.Infra.Data\EstimaLucro.Infra.Data.csproj", "{37B3CD04-05F7-43D3-8A56-FAB4BB5582BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstimaLucro.Services.LoadPriceFiis", "EstimaLucro.Services.LoadPriceFiis\EstimaLucro.Services.LoadPriceFiis.csproj", "{1069E27D-7BF6-4061-9B09-8DD8CABAB194}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +33,28 @@ Global
 		{524D3CA1-B09E-412E-887B-FAA65C438755}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{524D3CA1-B09E-412E-887B-FAA65C438755}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{524D3CA1-B09E-412E-887B-FAA65C438755}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C0CED14-7D95-4482-A60E-B26E772FE2E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C0CED14-7D95-4482-A60E-B26E772FE2E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C0CED14-7D95-4482-A60E-B26E772FE2E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C0CED14-7D95-4482-A60E-B26E772FE2E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B3CD04-05F7-43D3-8A56-FAB4BB5582BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B3CD04-05F7-43D3-8A56-FAB4BB5582BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B3CD04-05F7-43D3-8A56-FAB4BB5582BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B3CD04-05F7-43D3-8A56-FAB4BB5582BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1069E27D-7BF6-4061-9B09-8DD8CABAB194}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1069E27D-7BF6-4061-9B09-8DD8CABAB194}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1069E27D-7BF6-4061-9B09-8DD8CABAB194}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1069E27D-7BF6-4061-9B09-8DD8CABAB194}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{524D3CA1-B09E-412E-887B-FAA65C438755} = {CE6E9382-2779-492B-B232-255C53B2972F}
+		{1C0CED14-7D95-4482-A60E-B26E772FE2E4} = {577321C1-D66A-4F5C-848F-A3BB7A908B2D}
+		{20BBB795-33F4-42A0-93B0-0AFBA05B589C} = {0BEDA0F0-5AE4-4375-B600-445F41C7E312}
+		{37B3CD04-05F7-43D3-8A56-FAB4BB5582BD} = {20BBB795-33F4-42A0-93B0-0AFBA05B589C}
+		{1069E27D-7BF6-4061-9B09-8DD8CABAB194} = {C8A280DD-2190-40D0-8F18-04786C58655B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BCAB28D1-35D8-448C-8E5F-C3648602B54B}

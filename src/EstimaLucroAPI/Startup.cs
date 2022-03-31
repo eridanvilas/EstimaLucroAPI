@@ -7,6 +7,8 @@ using Microsoft.OpenApi.Models;
 using AutoMapper;
 using MediatR;
 using EstimaLucroAPI.Application.Mapper;
+using EstimaLucroAPI.Application.Commands.GetAllFiis;
+using System.Reflection;
 
 namespace EstimaLucroAPI
 {
@@ -30,6 +32,7 @@ namespace EstimaLucroAPI
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddControllers();
             services.AddMediatR(typeof(Startup));
+            services.AddMediatR(typeof(GetAllFiisCommand).GetTypeInfo().Assembly);
             services.AddSingleton(mapper);
             services.AddSwaggerGen(c =>
             {
