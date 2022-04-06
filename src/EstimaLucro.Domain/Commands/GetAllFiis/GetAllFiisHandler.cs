@@ -1,5 +1,6 @@
 ﻿using EstimaLucro.Domain.Models;
 using MediatR;
+using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
@@ -19,7 +20,8 @@ namespace EstimaLucro.Domain.Commands.GetAllFiis
 
         public async Task<GetAllFiisCommandResponse> Handle(GetAllFiisCommand request, CancellationToken cancellationToken)
         {
-            IList<Fii> fiisList = _mediator.Send(GetAllQueryHandler)
+            IList<Fii> fiisList = new List<Fii>();
+            fiisList.Add(new Fii(1, "Fundo Teste", 10, 9, DateTime.Now));
 
             var response = new GetAllFiisCommandResponse(fiisList);
             return response;

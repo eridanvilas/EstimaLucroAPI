@@ -1,5 +1,6 @@
 ﻿using EstimaLucro.Domain.Commands.GetAllFiis;
 using EstimaLucro.Domain.Models;
+using EstimaLucro.Infra.Data.Queries.Fii.GetAll;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -27,8 +28,8 @@ namespace EstimaLucroAPI.Controllers
         {
             try
             {
-                var response = await _mediator.Send(new GetAllFiisCommand());
-                return Ok(response.Fiis);
+                var response = await _mediator.Send(new GetAllQuery());
+                return Ok(response.Fii);
             }
             catch (Exception ex)
             {
