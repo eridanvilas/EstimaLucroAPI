@@ -12,7 +12,6 @@ using EstimaLucro.Domain.Commands.GetAllFiis;
 using EstimaLucro.Infra.Data.Queries.Fii.GetAll;
 using EstimaLucro.Infra.Data.Repositories.Contrants;
 using EstimaLucro.Infra.Data;
-using EstimaLucro.Infra.Data.Repositories.Fii.GetAll;
 
 namespace EstimaLucroAPI
 {
@@ -39,7 +38,6 @@ namespace EstimaLucroAPI
             services.AddMediatR(typeof(GetAllFiisCommand).GetTypeInfo().Assembly);
             services.AddMediatR(typeof(GetAllQueryHandler).GetTypeInfo().Assembly);
             services.AddTransient<IFiiRepository, FiiRepository>();
-            services.AddTransient<IGetAll, GetAll>();
             services.AddSingleton(mapper);
             services.AddSwaggerGen(c =>
             {

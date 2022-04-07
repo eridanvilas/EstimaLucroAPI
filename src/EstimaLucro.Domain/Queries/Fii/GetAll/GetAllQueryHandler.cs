@@ -16,7 +16,7 @@ namespace EstimaLucro.Infra.Data.Queries.Fii.GetAll
 
         public async Task<GetAllQueryResponse> Handle(GetAllQuery request, CancellationToken cancellationToken)
         {
-            var response = new GetAllQueryResponse((Domain.Models.Fii)await _fiiRepository.GetAllAsync());
+            var response = new GetAllQueryResponse(await _fiiRepository.GetAllAsync());
 
             return response;
         }

@@ -8,7 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace EstimaLucroAPI.Controllers
+namespace EstimaLucroAPI.Controllers.v1
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -29,7 +29,7 @@ namespace EstimaLucroAPI.Controllers
             try
             {
                 var response = await _mediator.Send(new GetAllQuery());
-                return Ok(response.Fii);
+                return Ok(response.Fiis);
             }
             catch (Exception ex)
             {

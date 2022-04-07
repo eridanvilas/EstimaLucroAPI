@@ -1,9 +1,11 @@
-﻿namespace EstimaLucro.Infra.Data.Queries.Fii.GetAll
+﻿using System.Collections.Generic;
+
+namespace EstimaLucro.Infra.Data.Queries.Fii.GetAll
 {
     public class GetAllQueryResponse
     {
-        public GetAllQueryResponse(Domain.Models.Fii fii) => Fii = fii;
-        public Domain.Models.Fii Fii;
+        public GetAllQueryResponse(IList<Domain.Models.Fii> fiis) => Fiis = fiis;
+        public IList<Domain.Models.Fii> Fiis;
 
     }
 }
