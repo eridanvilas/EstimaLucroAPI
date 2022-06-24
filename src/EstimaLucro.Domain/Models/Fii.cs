@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EstimaLucroAPI.Application.Models
+namespace EstimaLucro.Domain.Models
 {
     public class Fii
     {

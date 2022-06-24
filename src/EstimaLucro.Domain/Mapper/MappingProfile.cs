@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 
-namespace EstimaLucroAPI.Application.Mapper
+namespace EstimaLucro.Domain.Mapper
 {
     public class MappingProfile : Profile
     {
